@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<?php echo $_POST["_token"]; ?>
+<?php echo $_POST["name"]; ?>
 
 </body>
 </html>
