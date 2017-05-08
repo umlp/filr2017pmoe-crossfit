@@ -177,9 +177,9 @@
 
   <div class="col-sm-2">
     <!-- Current Tasks -->
-    <div class="panel panel-success">
+    <div class="panel panel-danger">
       <div class="panel-heading">
-        Tâches terminés
+        Tâches incomplètes
       </div>
 
       <div class="panel-body">
@@ -216,6 +216,42 @@
  <h3>Where To Find Me?</h3>
  <div class="row">
    <div class="col-sm-4">
+
+   </div>
+   <div class="col-sm-4">
+     <div class="panel panel-primary">
+       <div class="panel-heading">
+         Tâches en cours
+       </div>
+
+       <div class="panel-body">
+         <table class="table table-striped task-table">
+           <thead>
+             <th>Task</th>
+             <th>&nbsp;</th>
+           </thead>
+           <tbody>
+             <tr>
+               <td class="table-text"><div>Acheter du sopalin</div></td>
+
+               <!-- Task Delete Button -->
+               <td>
+                 <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/58" method="POST">
+                   <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
+                   <input type="hidden" name="_method" value="DELETE">
+
+                   <button type="submit" class="btn btn-danger">
+                     <i class="fa fa-btn fa-trash"></i>Supprimer
+                   </button>
+                 </form>
+               </td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
+   </div>
+   <div class="col-sm-4">
      <div class="panel panel-success">
        <div class="panel-heading">
          Tâches terminés
@@ -247,14 +283,6 @@
          </table>
        </div>
      </div>
-   </div>
-   <div class="col-sm-4">
-     <p>Lorem ipsum..</p>
-     <img src="birds2.jpg" alt="Image">
-   </div>
-   <div class="col-sm-4">
-     <p>Lorem ipsum..</p>
-     <img src="birds3.jpg" alt="Image">
    </div>
  </div>
 </div>
