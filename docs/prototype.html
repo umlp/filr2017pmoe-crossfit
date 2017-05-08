@@ -102,373 +102,75 @@
     </div>
 
     <div class="row">
+      <div class="col-sm-4">
+        <!-- Current Tasks -->
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            Tâches en cours
+          </div>
 
-      <!-- Current Tasks -->
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          Tâches en cours
-        </div>
+          <div class="panel-body">
+            <table class="table table-striped task-table">
+              <thead>
+                <th>Task</th>
+                <th>&nbsp;</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-text"><div>Acheter du sopalin</div></td>
 
-        <div class="panel-body">
-          <table class="table table-striped task-table">
-            <thead>
-              <th>Task</th>
-              <th>&nbsp;</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="table-text"><div>Acheter du sopalin</div></td>
+                  <!-- Task Delete Button -->
+                  <td>
+                    <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/58" method="POST">
+                      <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
+                      <input type="hidden" name="_method" value="DELETE">
 
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/58" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>Fistiland, au fond du fun !</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/70" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>Malandain lui a offert un r&eacute;troprojecteur &agrave; 2000 euros : Scandale</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/73" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>EMPLOIS FICTIFS : Il ferait travailler une poule en tant que femme de m&eacute;nage</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/75" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>Il fait appel &agrave; l&#039;immunit&eacute;e ing&eacute;nieure</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/76" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>FBAB 2017</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/77" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>BAUCHER d&eacute;gringole dans les sondages</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/80" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>5 FACONS DE VALIDER VOTRE ANNEE ! LA 3E VA VOUS ETONNER !</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/81" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>Nouveau Coaching beauf magazine : VDC vous dis tout!</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/83" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>Ivre, il d&eacute;truit le r&eacute;troprojecteur qui d&eacute;conne ! Images chocs !</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/85" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-              <tr>
-                <td class="table-text"><div>JLM pour la pr&eacute;sidence 2017</div></td>
-
-                <!-- Task Delete Button -->
-                <td>
-                  <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/88" method="POST">
-                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                    <input type="hidden" name="_method" value="DELETE">
-
-                    <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-btn fa-trash"></i>Supprimer
-                    </button>
-                  </form>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                      <button type="submit" class="btn btn-danger">
+                        <i class="fa fa-btn fa-trash"></i>Supprimer
+                      </button>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="col-sm-4">
+    <!-- Current Tasks -->
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        Tâches en cours
+      </div>
 
-  <!-- Current Tasks -->
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      Tâches en cours
-    </div>
+      <div class="panel-body">
+        <table class="table table-striped task-table">
+          <thead>
+            <th>Task</th>
+            <th>&nbsp;</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-text"><div>Acheter du sopalin</div></td>
 
-    <div class="panel-body">
-      <table class="table table-striped task-table">
-        <thead>
-          <th>Task</th>
-          <th>&nbsp;</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="table-text"><div>Acheter du sopalin</div></td>
+              <!-- Task Delete Button -->
+              <td>
+                <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/58" method="POST">
+                  <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
+                  <input type="hidden" name="_method" value="DELETE">
 
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/58" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>Fistiland, au fond du fun !</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/70" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>Malandain lui a offert un r&eacute;troprojecteur &agrave; 2000 euros : Scandale</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/73" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>EMPLOIS FICTIFS : Il ferait travailler une poule en tant que femme de m&eacute;nage</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/75" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>Il fait appel &agrave; l&#039;immunit&eacute;e ing&eacute;nieure</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/76" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>FBAB 2017</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/77" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>BAUCHER d&eacute;gringole dans les sondages</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/80" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>5 FACONS DE VALIDER VOTRE ANNEE ! LA 3E VA VOUS ETONNER !</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/81" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>Nouveau Coaching beauf magazine : VDC vous dis tout!</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/83" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>Ivre, il d&eacute;truit le r&eacute;troprojecteur qui d&eacute;conne ! Images chocs !</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/85" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-text"><div>JLM pour la pr&eacute;sidence 2017</div></td>
-
-            <!-- Task Delete Button -->
-            <td>
-              <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/88" method="POST">
-                <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                <input type="hidden" name="_method" value="DELETE">
-
-                <button type="submit" class="btn btn-danger">
-                  <i class="fa fa-btn fa-trash"></i>Supprimer
-                </button>
-              </form>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                  <button type="submit" class="btn btn-danger">
+                    <i class="fa fa-btn fa-trash"></i>Supprimer
+                  </button>
+                </form>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
