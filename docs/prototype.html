@@ -45,8 +45,8 @@
           <li><a href="#">Devoirs</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Se conncter avec un compte INSA</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Connection</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Se connecter avec un compte INSA</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
         </ul>
       </div>
     </div>
@@ -125,10 +125,7 @@
              <th>Task</th>
              <th>&nbsp;</th>
            </thead>
-           <tbody>
-             <tr>
-               <td class="table-text"><div>Acheter du sopalin</div></td>
-             </tr>
+           <tbody id ="termine">
            </tbody>
          </table>
        </div>
@@ -144,10 +141,12 @@
     $('button').click(function () {
         $('#todo').append("<tr>" +
                             '<td class="table-text"><div>'+$("input[name=name]").val() + "</div></td>"+
-                            '<td><button type="button" class="btn btn-danger"><i class="fa fa-btn fa-trash"></i>Supprimer</button></td>');
+                            '<td id="bouton"><button type="button" class="btn btn-danger"><i class="fa fa-btn fa-trash"></i>Supprimer</button></td></tr>');
     });
     $("body").on('click', '#todo button', function () {
-        $(this).closest("tr").remove();
+      $('#termine').append("<tr>"+$(this).closest("tr").html()+"</tr>");
+      $(this).closest("tr").remove();
+      $('#termine #bouton').replaceWith('<td class="table-text"><div class="label label-success"><i class="fa fa-btn fa-check"></i>Terminé</div></td>');
     });
   });
   function afficheDate() {
