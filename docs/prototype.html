@@ -24,7 +24,7 @@
   }
   </style>
 </head>
-<body id="app-layout">
+<body id="app-layout" onload="javascript:afficheDate()">
 
 
 
@@ -56,7 +56,7 @@
   <div class="container-fluid bg-3 text-center">
 
 <div class="container-fluid bg-3 text-center">
- <h3 onload="javascript:depart()"></h3>
+ <h3  id="jour">Le </h3>
  <div class="row">
    <div class="col-sm-4">
      <div class="panel panel-info">
@@ -150,11 +150,12 @@
         $(this).closest("tr").remove();
     });
   });
-  function  afficheDate () {
-    var  maintenant= new  Date();
-    var  body = document.getElementsByTagName("h3")[0];
+  function afficheDate() {
+    var  maintenant = new Date();
+    var  h3 = document.getElementById("jour");
     var  date = document.createTextNode(maintenant.getDate ()+"/"+String(maintenant.getMonth ()+1)+"/"+maintenant.getFullYear ()+" ");
-    h3.appendChild(date);
+    h3.append(date);
+    console.log(date);
   };
 </script>
 </body>
