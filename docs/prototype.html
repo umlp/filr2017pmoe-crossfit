@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Laravel Quickstart - Basic</title>
+  <title>ToDo_List</title>
 
   <!-- Fonts -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
@@ -51,102 +51,10 @@
       </div>
     </div>
   </nav>
-  <!--
-  <nav class="navbar navbar-default">
-  <div class="container">
-  <div class="navbar-header">
 
-  <a class="navbar-brand" href="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php">
-  Task List
-</a>
-</div>
-
-</div>
-</nav>
--->     <br/>
+ <br/>
   <div class="container-fluid bg-3 text-center">
-  <!--  <div class="row">-
 
-      <div class="col-sm-3">-->
-        <!-- Current Tasks -->
-      <!--     <div class="panel panel-danger">
-          <div class="panel-heading">
-            Tâches incomplètes
-          </div>
-
-          <div class="panel-body">
-            <table class="table table-striped task-table">
-              <thead>
-                <th>Task</th>
-                <th>&nbsp;</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="table-text"><div>Acheter du sopalin</div></td>
--->
-                  <!-- Task Delete Button -->
-          <!--           <td>
-                    <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/58" method="POST">
-                      <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                      <input type="hidden" name="_method" value="DELETE">
-
-                      <button type="submit" class="btn btn-danger">
-                        <i class="fa fa-btn fa-trash"></i>Supprimer
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-sm-6">
--->
-        <!-- Current Tasks -->
-      <!--     <div class="panel panel-primary">
-            <div class="panel-heading">
-            Tâches en cours
-          </div>
-
-          <div class="panel-body">
-            <table class="table table-striped task-table">
-              <thead>
-                <th>Task</th>
-                <th>&nbsp;</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="table-text"><div>Acheter du sopalin</div></td>-->
-
-                  <!-- Task Delete Button -->
-        <!--             <td>
-                    <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/58" method="POST">
-                      <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                      <input type="hidden" name="_method" value="DELETE">
-
-                      <button type="submit" class="btn btn-danger">
-                        <i class="fa fa-btn fa-trash"></i>Supprimer
-                      </button>
-                    </form>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <div class="col-sm-2">-->
-    <!-- Current Tasks -->
-
-  <!--   </div>
-</div>
-</div>-->
 <div class="container-fluid bg-3 text-center">
  <h3>Where To Find Me?</h3>
  <div class="col-sm-4">
@@ -159,7 +67,7 @@
        <!-- Display Validation Errors -->
 
        <!-- New Task Form -->
-       <form action="http://qrobcis.me/task.php/" method="POST" class="form-horizontal">
+       <form role="form">
          <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
 
 
@@ -168,14 +76,14 @@
            <label for="task-name" class="col-sm-3 control-label">Task</label>
 
            <div class="col-sm-4">
-             <input type="text" name="name" id="task-name" class="form-control" value="">
+             <input type="text" name="name" id="task-name" class="form-control" placeholder="New task..." >
            </div>
          </div>
 
          <!-- Add Task Button -->
          <div class="form-group">
            <div class="col-sm-offset-3 col-sm-6">
-             <button type="submit" class="btn btn-default">
+             <button type="button" class="btn btn-default">
                <i class="fa fa-btn fa-plus"></i>Ajouter
              </button>
            </div>
@@ -208,7 +116,7 @@
                    <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
                    <input type="hidden" name="_method" value="DELETE">
 
-                   <button type="submit" class="btn btn-danger">
+                   <button type="button" class="btn btn-danger">
                      <i class="fa fa-btn fa-trash"></i>Supprimer
                    </button>
                  </form>
@@ -231,22 +139,8 @@
              <th>Task</th>
              <th>&nbsp;</th>
            </thead>
-           <tbody>
-             <tr>
-               <td class="table-text"><div>Acheter du sopalin</div></td>
+           <tbody id="todo">
 
-               <!-- Task Delete Button -->
-               <td>
-                 <form action="http://casisbelli-03.insa-rouen.fr/fermefilr/z/fork/quickstart-basic/public/index.php/task/58" method="POST">
-                   <input type="hidden" name="_token" value="LbXbQdlWibqEGRweOdOZjgZoPN1SFgEZ7bRccuBJ">
-                   <input type="hidden" name="_method" value="DELETE">
-
-                   <button type="submit" class="btn btn-danger">
-                     <i class="fa fa-btn fa-trash"></i>Supprimer
-                   </button>
-                 </form>
-               </td>
-             </tr>
            </tbody>
          </table>
        </div>
@@ -290,5 +184,17 @@
 <!-- JavaScripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('button').click(function () {
+        $('#todo').append("<tr>" +
+                            '<td class="table-text"><div>'+$("input[name=name]").val() + "</div></td>"+
+                            '<td><button type="button" class="btn btn-danger"><i class="fa fa-btn fa-trash"></i>Supprimer</button></td>');
+    });
+    $("body").on('click', '#todo button', function () {
+        $(this).closest("tr").remove();
+    });
+  });
+</script>
 </body>
 </html>
